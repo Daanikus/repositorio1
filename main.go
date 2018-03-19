@@ -9,5 +9,8 @@ func main() {
 	fmt.Printf("hola %s, bienvenido a go \n",name)	
 	fmt.Print("hola mundo ")
 
-	//Agregando comentario	
+	//Agregando comentario
+	//Agregando comentario2
+	//Agregando comentario3
+
 }
