@@ -21,5 +21,6 @@ func main() {
 	fmt.Printf(helloWorld,name,lastname)
 	fmt.Println("hola mundo ")
 	fmt.Println(number,a,b,c)
+	//Comentariooooo
 	//Comentario- Se reinicia capacitacion GO
 }
