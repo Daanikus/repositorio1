@@ -19,6 +19,7 @@ func main() {
 	//Agregando comentario
 	//Agregando comentario2
 	//Agregando comentario3
+	//Agregando comentario4
 
 >>>>>>> nuevaClase
 }
