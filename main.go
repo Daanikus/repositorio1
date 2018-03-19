@@ -12,6 +12,13 @@ func main() {
 =======
 	fmt.Print("hola mundo ")
 
+<<<<<<< HEAD
 	//Agregando comentario	
+>>>>>>> nuevaClase
+=======
+	//Agregando comentario
+	//Agregando comentario2
+	//Agregando comentario3
+
 >>>>>>> nuevaClase
 }
