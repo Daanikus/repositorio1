@@ -10,11 +10,8 @@ func main() {
 	name := getName()
 	lastname:="<Modificar con el apellido>"
 	var number = 100
-	var (
-		a=1
-		b=2
-		c=3
-	)
+
+	a,b,c := getVariables()
 
 	fmt.Printf(helloWorld,name,lastname)
 	fmt.Println("hola mundo ")
@@ -29,5 +26,10 @@ func getName() string {
 	fmt.Print("Ingresa tu nombre")
 	fmt.Scanf("%s",&name)
 	return name
+
+}
+
+func getVariables()(int ,int,int)  {
+	return 4,5,6
 
 }
