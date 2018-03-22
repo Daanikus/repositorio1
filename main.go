@@ -2,34 +2,42 @@ package main
 
 import "fmt"
 
-const helloWorld string ="Hola %s %s, bienvenido a GO "
-const testConst = "Test"
+var resultado int
 
 func main() {
-
-	name := getName()
-	lastname:="<Modificar con el apellido>"
-	var number = 100
-
-	a,b,c := getVariables()
-
-	fmt.Printf(helloWorld,name,lastname)
-	fmt.Println("hola mundo ")
-	fmt.Println(number,a,b,c)
-	//Comentariooooossss
-	//Comentario- Se reinicia capacitacion GO
+	resultado := funcionCalculadora()
+		fmt.Printf("El resultado es : %d ",resultado)
 }
 
-func getName() string {
-	var name string
-	name ="Sin nombres"
-	fmt.Print("Ingresa tu nombre")
-	fmt.Scanf("%s",&name)
-	return name
+func funcionCalculadora() int  {
+	var numero1 int
+	var numero2 int
+	var operacion int
+	var resultadoCalculadora int
 
+	fmt.Print("Ingresa primer numero: ")
+	fmt.Scanf("%d",&numero1)
+	fmt.Print("Ingresa segundo numero: ")
+	fmt.Scanf("%d",&numero2)
+	fmt.Print("Ingresa operacion a realizar: \n1:Suma - 2:Resta - 3:Multiplicacion - 4:Division")
+	fmt.Scanf("%d",&operacion)
+
+  resultadoCalculadora = gestorOperacion(operacion, numero1,numero2)
+	return resultadoCalculadora
 }
 
-func getVariables()(int ,int,int)  {
-	return 4,5,6
-
+func gestorOperacion(operacion int, numero1 int, numero2 int) int {
+	var operacionTerminada int
+	if (operacion == 1) {
+		operacionTerminada = numero1 + numero2
+	}else if (operacion == 2)  {
+		operacionTerminada = numero1 - numero2
+	}else if (operacion == 3) {
+		operacionTerminada =  numero1 * numero2
+	}else if (operacion == 4) {
+		operacionTerminada = numero1 / numero2
+	}else  {
+		fmt.Print("Operacion no permitida \n")
+	}
+	return operacionTerminada
 }
